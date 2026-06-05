@@ -561,3 +561,26 @@ height:180px;
 }
 
 }
+
+.error{
+display:block;
+color:#ff6b6b;
+font-size:12px;
+margin-top:5px;
+margin-bottom:10px;
+}
+
+select{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:12px;
+background:rgba(255,255,255,.15);
+color:white;
+margin-bottom:15px;
+}
+
+select option{
+background:#0f172a;
+}
