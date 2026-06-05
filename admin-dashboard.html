@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly Admin Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="Assests/logo.webp" alt="logo">
+
+</div>
+
+<ul>
+
+<li class="active">
+<i class="fas fa-chart-pie"></i>
+Dashboard
+</li>
+
+<li>
+<i class="fas fa-users"></i>
+Users
+</li>
+
+<li>
+<i class="fas fa-gamepad"></i>
+Teams
+</li>
+
+<li>
+<i class="fas fa-trophy"></i>
+Tournaments
+</li>
+
+<li>
+<i class="fas fa-chart-line"></i>
+Analytics
+</li>
+
+<li>
+<i class="fas fa-wallet"></i>
+Revenue
+</li>
+
+<li>
+<i class="fas fa-gear"></i>
+Settings
+</li>
+
+<li>
+<i class="fas fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div class="welcome">
+
+<h2>Admin Dashboard</h2>
+
+<p>Welcome back, Admin 👋</p>
+
+</div>
+
+<div class="top-actions">
+
+<div class="search">
+
+<i class="fas fa-search"></i>
+
+<input
+type="text"
+placeholder="Search users...">
+
+</div>
+
+<div class="icon">
+
+<i class="fas fa-envelope"></i>
+
+<span class="badge">5</span>
+
+</div>
+
+<div class="icon">
+
+<i class="fas fa-bell"></i>
+
+<span class="badge">8</span>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150?img=3">
+
+<span>Admin</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- STATS -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3 id="players">0</h3>
+
+<p>Total Players</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="teams">0</h3>
+
+<p>Total Teams</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="tournaments">0</h3>
+
+<p>Active Tournaments</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="revenue">0</h3>
+
+<p>Revenue</p>
+
+</div>
+
+</div>
+
+<!-- CONTENT GRID -->
+
+<div class="content-grid">
+
+<!-- CHART AREA -->
+
+<div class="analytics-card">
+
+<div class="card-header">
+
+<h3>Platform Analytics</h3>
+
+</div>
+
+<canvas id="analyticsChart"></canvas>
+
+</div>
+
+<!-- ACTIVITY -->
+
+<div class="activity-card">
+
+<h3>Recent Activities</h3>
+
+<div class="activity-list">
+
+<div class="activity-item">
+🔥 New Team Registered
+</div>
+
+<div class="activity-item">
+🏆 Tournament Created
+</div>
+
+<div class="activity-item">
+👤 New Manager Added
+</div>
+
+<div class="activity-item">
+⚠ Report Submitted
+</div>
+
+<div class="activity-item">
+💰 Payment Received
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- USER TABLE -->
+
+<div class="table-card">
+
+<div class="card-header">
+
+<h3>User Management</h3>
+
+<button>
+Add User
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Prasanna</td>
+
+<td>Player</td>
+
+<td>
+<span class="active-status">
+Active
+</span>
+</td>
+
+<td>
+
+<button class="view-btn">
+View
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>Manager</td>
+
+<td>
+<span class="active-status">
+Active
+</span>
+</td>
+
+<td>
+
+<button class="view-btn">
+View
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Kiran</td>
+
+<td>Player</td>
+
+<td>
+<span class="ban-status">
+Banned
+</span>
+</td>
+
+<td>
+
+<button class="view-btn">
+View
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- QUICK ACTIONS -->
+
+<div class="quick-actions">
+
+<div class="action-card">
+
+<i class="fas fa-user-plus"></i>
+
+<h4>Add Manager</h4>
+
+</div>
+
+<div class="action-card">
+
+<i class="fas fa-trophy"></i>
+
+<h4>Create Tournament</h4>
+
+</div>
+
+<div class="action-card">
+
+<i class="fas fa-bullhorn"></i>
+
+<h4>Announcement</h4>
+
+</div>
+
+<div class="action-card">
+
+<i class="fas fa-shield"></i>
+
+<h4>Security</h4>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

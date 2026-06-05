@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly Manager Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="manager.css">
+
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+
+<header class="navbar">
+<div class="logo">
+    <img src="Assests/logo.webp" alt="Stackly Logo">
+</div>
+<nav>
+
+<a href="404.html">Dashboard</a>
+
+<a href="404.html">Teams</a>
+
+<a href="404.html">Players</a>
+
+<a href="404.html">Tournaments</a>
+
+<a href="404.html">Reports</a>
+
+</nav>
+
+<div class="top-right">
+
+<div class="search-box">
+
+<i class="fas fa-search"></i>
+
+<input
+type="text"
+placeholder="Search Team...">
+
+</div>
+
+<div class="icon">
+
+<i class="fas fa-envelope"></i>
+
+<span class="badge">3</span>
+
+</div>
+
+<div class="icon">
+
+<i class="fas fa-bell"></i>
+
+<span class="badge">5</span>
+
+</div>
+
+<div class="profile">
+
+<img
+src="https://i.pravatar.cc/100"
+alt="profile">
+
+<span>Manager</span>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- MAIN -->
+
+<div class="container">
+
+<!-- LEFT FILTER -->
+
+<aside class="sidebar">
+
+<div class="filter-header">
+
+<h2>Filter By</h2>
+
+<button>Clear All</button>
+
+</div>
+
+<!-- TEAM STATUS -->
+
+<div class="filter-section">
+
+<h3>Team Status</h3>
+
+<label>
+<input type="checkbox" checked>
+Active Teams
+</label>
+
+<label>
+<input type="checkbox">
+Pending Teams
+</label>
+
+<label>
+<input type="checkbox">
+Rejected Teams
+</label>
+
+</div>
+
+<!-- GAME -->
+
+<div class="filter-section">
+
+<h3>Game</h3>
+
+<label>
+<input type="checkbox" checked>
+BGMI
+</label>
+
+<label>
+<input type="checkbox">
+Free Fire
+</label>
+
+<label>
+<input type="checkbox">
+Valorant
+</label>
+
+<label>
+<input type="checkbox">
+COD Mobile
+</label>
+
+</div>
+
+<!-- TEAM SIZE -->
+
+<div class="filter-section">
+
+<h3>Team Type</h3>
+
+<label>
+<input type="checkbox">
+Solo
+</label>
+
+<label>
+<input type="checkbox">
+Duo
+</label>
+
+<label>
+<input type="checkbox" checked>
+Squad
+</label>
+
+</div>
+
+</aside>
+
+<!-- CONTENT -->
+
+<main class="content">
+<div class="stats-row">
+
+<div class="stat-box">
+<h2>128</h2>
+<p>Total Teams</p>
+</div>
+
+<div class="stat-box">
+<h2>542</h2>
+<p>Total Players</p>
+</div>
+
+<div class="stat-box">
+<h2>38</h2>
+<p>Active Tournaments</p>
+</div>
+
+<div class="stat-box">
+<h2>91%</h2>
+<p>Success Rate</p>
+</div>
+
+</div>
+<div class="content-header">
+
+<h1>Team Management</h1>
+
+<button class="add-team">
++ Add Team
+</button>
+
+</div>
+
+<!-- TEAM CARDS GRID -->
+
+<div class="cards-grid">
+
+<!-- CARD 1 -->
+
+<div class="team-card">
+
+<div class="card-image">
+
+<img src="Assests/pexels-lulizler-3165335.webp">
+
+<i class="fas fa-heart"></i>
+
+</div>
+
+<div class="card-content">
+
+<h2>Phoenix Squad</h2>
+
+<p>BGMI Professional Team</p>
+
+<div class="card-stats">
+
+<span>
+<i class="fas fa-users"></i>
+4 Players
+</span>
+
+<span>
+<i class="fas fa-trophy"></i>
+12 Wins
+</span>
+
+</div>
+
+<h3>Diamond Rank</h3>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="team-card">
+
+<div class="card-image">
+
+<img src="Assests/pexels-yankrukov-9072381.webp">
+
+<i class="fas fa-heart"></i>
+
+</div>
+
+<div class="card-content">
+
+<h2>Shadow Hunters</h2>
+
+<p>Valorant Team</p>
+
+<div class="card-stats">
+
+<span>
+<i class="fas fa-users"></i>
+5 Players
+</span>
+
+<span>
+<i class="fas fa-trophy"></i>
+18 Wins
+</span>
+
+</div>
+
+<h3>Platinum Rank</h3>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="team-card">
+
+<div class="card-image">
+
+<img src="Assests/virtual reality.webp">
+
+<i class="fas fa-heart"></i>
+
+</div>
+
+<div class="card-content">
+
+<h2>Alpha Force</h2>
+
+<p>Free Fire Team</p>
+
+<div class="card-stats">
+
+<span>
+<i class="fas fa-users"></i>
+4 Players
+</span>
+
+<span>
+<i class="fas fa-trophy"></i>
+15 Wins
+</span>
+
+</div>
+
+<h3>Ace Rank</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<!-- RIGHT PANEL -->
+
+<aside class="activity-panel">
+
+<h2>Live Activity</h2>
+
+<div class="activity">
+
+<p>🔥 Phoenix Squad joined tournament</p>
+
+</div>
+
+<div class="activity">
+
+<p>🏆 Shadow Hunters won match</p>
+
+</div>
+
+<div class="activity">
+
+<p>📩 New Team Registration</p>
+
+</div>
+
+<div class="activity">
+
+<p>⚔ Upcoming Match Today</p>
+
+</div>
+
+</aside>
+
+</div>
+
+<script src="manager.js"></script>
+
+</body>
+</html>

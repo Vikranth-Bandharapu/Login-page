@@ -6,26 +6,20 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-
-height:100vh;
-
+min-height:100vh;
 display:flex;
-
 justify-content:center;
 align-items:center;
-
-overflow:hidden;
-
-background:
-linear-gradient(
+overflow-x:hidden;
+overflow-y:auto;
+padding:20px;
+background:linear-gradient(
 135deg,
 #0057ff,
 #0088ff
 );
-
 position:relative;
 }
-
 .background{
 
 position:absolute;
@@ -583,4 +577,16 @@ margin-bottom:15px;
 
 select option{
 background:#0f172a;
+}
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.logo img{
+    width:180px;      /* increase or decrease as needed */
+    height:auto;
+    object-fit:contain;
 }
