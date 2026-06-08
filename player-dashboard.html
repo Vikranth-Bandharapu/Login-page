@@ -4,145 +4,432 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stackly Player Dashboard</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="player-dashboard.css">
 </head>
+
 <body>
-<div class="sidebar">
-  <div class="brand">
 
-<img
-src="Assests/logo.webp"
-alt="Stackly Logo">
+<div class="dashboard">
 
-</div>
-  <div class="sidebar">
+   <aside class="sidebar">
 
 <div class="brand">
-<img src="Assests/logo.webp" alt="Stackly Logo">
+<img src="Assests/logo.webp" alt="Stackly">
 </div>
 
-<a href="#" onclick="showSection('home')">
-<i class="fas fa-house"></i>
-</a>
+<ul class="menu">
 
-<a href="#" onclick="showSection('games')">
+<li class="active">
+<a href="player-dashboard.html">
+<i class="fas fa-chart-pie"></i>
+<span>Overview</span>
+</a>
+</li>
+
+<li>
+<a href="games.html">
 <i class="fas fa-gamepad"></i>
+<span>Games</span>
 </a>
+</li>
 
-<a href="#" onclick="showSection('tournaments')">
+<li>
+<a href="tournaments.html">
 <i class="fas fa-trophy"></i>
+<span>Tournaments</span>
 </a>
+</li>
 
-<a href="#" onclick="showSection('team')">
+<li>
+<a href="team.html">
 <i class="fas fa-users"></i>
+<span>Team</span>
 </a>
+</li>
 
-<a href="#" onclick="showSection('settings')">
+<li>
+<a href="analytics.html">
+<i class="fas fa-chart-line"></i>
+<span>Analytics</span>
+</a>
+</li>
+
+<li>
+<a href="messages.html">
+<i class="fas fa-message"></i>
+<span>Messages</span>
+</a>
+</li>
+
+<li>
+<a href="settings.html">
 <i class="fas fa-gear"></i>
+<span>Settings</span>
 </a>
+</li>
+
+</ul>
+
+</aside>
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search games, tournaments...">
+            </div>
+
+            <div class="top-actions">
+
+                <div class="action">
+                    <i class="fas fa-envelope"></i>
+                    <span>4</span>
+                </div>
+
+                <div class="action">
+                    <i class="fas fa-bell"></i>
+                    <span>8</span>
+                </div>
+
+                <div class="profile">
+
+                    <img src="https://i.pravatar.cc/100" alt="Player">
+
+                    <div>
+                        <h4>Vikranth</h4>
+                        <p>Pro Gamer</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    LIVE PLAYER
+                </span>
+
+                <h1>
+                    Vikranth Gaming Analytics
+                </h1>
+
+                <p>
+                    Track your gameplay performance, tournament results,
+                    rankings and achievements in one place.
+                </p>
+
+                <button>
+                    Start Playing
+                </button>
+
+                <div class="hero-stats">
+
+                    <div class="mini-stat">
+                        <h3>#45</h3>
+                        <span>Global Rank</span>
+                    </div>
+
+                    <div class="mini-stat">
+                        <h3>78%</h3>
+                        <span>Win Rate</span>
+                    </div>
+
+                    <div class="mini-stat">
+                        <h3>4.5</h3>
+                        <span>KD Ratio</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="Assests/multiplayer shooter.webp" alt="Player">
+            </div>
+
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <h2>125</h2>
+                <p>Matches Played</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>24</h2>
+                <p>Tournament Wins</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>$12K</h2>
+                <p>Earnings</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>82</h2>
+                <p>Player Level</p>
+            </div>
+
+        </section>
+
+        <!-- Popular Games -->
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Popular Games</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="games-grid">
+
+                <div class="game-card">
+                    <h3>Valorant</h3>
+                    <p>2.3M Active Players</p>
+                </div>
+
+                <div class="game-card">
+                    <h3>BGMI</h3>
+                    <p>1.8M Active Players</p>
+                </div>
+
+                <div class="game-card">
+                    <h3>CS2</h3>
+                    <p>1.5M Active Players</p>
+                </div>
+
+                <div class="game-card">
+                    <h3>Apex Legends</h3>
+                    <p>1.2M Active Players</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Tournaments -->
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Upcoming Tournaments</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="tournament-grid">
+
+                <div class="tournament-card">
+                    <h3>Stackly Championship</h3>
+                    <p>$250,000 Prize Pool</p>
+                </div>
+
+                <div class="tournament-card">
+                    <h3>BGMI Pro League</h3>
+                    <p>$100,000 Prize Pool</p>
+                </div>
+
+                <div class="tournament-card">
+                    <h3>Valorant Masters</h3>
+                    <p>$150,000 Prize Pool</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Team Section -->
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Team Members</h2>
+            </div>
+
+            <div class="team-grid">
+
+                <div class="member-card">
+                    <h4>Player One</h4>
+                    <p>Captain</p>
+                </div>
+
+                <div class="member-card">
+                    <h4>Player Two</h4>
+                    <p>Support</p>
+                </div>
+
+                <div class="member-card">
+                    <h4>Player Three</h4>
+                    <p>Sniper</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Achievements -->
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Recent Achievements</h2>
+            </div>
+
+            <div class="achievement-list">
+
+                <div class="achievement">
+                    🏆 Won Stackly Cup 2026
+                </div>
+
+                <div class="achievement">
+                    🎯 Reached Diamond Rank
+                </div>
+
+                <div class="achievement">
+                    🔥 20 Match Win Streak
+                </div>
+
+            </div>
+
+        </section>
+        <section class="section">
+
+<h2>Performance Analytics</h2>
+
+<div class="analytics-card">
+
+<div class="bar">
+<span>KD Ratio</span>
+<div class="progress">
+<div class="fill kd"></div>
+</div>
+</div>
+
+<div class="bar">
+<span>Win Rate</span>
+<div class="progress">
+<div class="fill win"></div>
+</div>
+</div>
+
+<div class="bar">
+<span>Accuracy</span>
+<div class="progress">
+<div class="fill accuracy"></div>
+</div>
+</div>
 
 </div>
 
-<div class="main">
-  <header class="topbar">
-    <div class="search"><i class="fas fa-search"></i><input placeholder="Search a game"></div>
-    <div class="right">
-      <i class="fas fa-envelope"></i>
-      <i class="fas fa-bell"></i>
-      <div class="profile">
-        <div>
-          <h4>Vikranth</h4>
-          <p>vikranth@gmail.com</p>
-        </div>
-        <img src="https://i.pravatar.cc/80" alt="profile">
-      </div>
-    </div>
-  </header>
+</section>
+<section class="section">
 
-  <section class="hero">
-    <div>
-      <span class="live">LIVE</span>
-      <h1>Watch Streaming Games Anytime Anywhere</h1>
-      <p>Compete, rank up and dominate global esports tournaments.</p>
-      <button>Stream Now</button>
-    </div>
-    <img src="Assests/gaming studio.webp" alt="gaming">
-  </section>
+<h2>Recent Matches</h2>
 
-  <div class="grid">
-    <section class="games">
-      <h2>Most Played Games</h2>
-      <div class="cards">
-        <div class="card"><h3>Valorant</h3><p>2.3M Players</p></div>
-        <div class="card"><h3>BGMI</h3><p>1.8M Players</p></div>
-        <div class="card"><h3>CS2</h3><p>1.5M Players</p></div>
-      </div>
-    </section>
+<div class="match-list">
 
-    <aside class="tour">
-      <h2>Upcoming Tournaments</h2>
-      <div class="tcard"><h3>Valorant Championship</h3><p>$250,000 Prize Pool</p></div>
-      <div class="tcard"><h3>BGMI Pro League</h3><p>$100,000 Prize Pool</p></div>
-      <div class="tcard"><h3>League Masters</h3><p>$150,000 Prize Pool</p></div>
-    </aside>
-  </div>
-
-  <section class="stats">
-    <div class="stat"><h2>#45</h2><p>Global Rank</p></div>
-    <div class="stat"><h2>125</h2><p>Matches Played</p></div>
-    <div class="stat"><h2>78%</h2><p>Win Rate</p></div>
-    <div class="stat"><h2>24</h2><p>Achievements</p></div>
-  </section>
+<div class="match">
+<h4>Valorant Ranked</h4>
+<span>WIN +25 RP</span>
 </div>
 
-<div id="games" style="display:none;">
-    <h1>Games Section</h1>
+<div class="match">
+<h4>BGMI Tournament</h4>
+<span>TOP 3</span>
 </div>
 
-<div id="tournaments" style="display:none;">
-    <h1>Tournaments Section</h1>
+<div class="match">
+<h4>CS2 Competitive</h4>
+<span>MVP</span>
 </div>
 
-<div id="team" style="display:none;">
-    <h1>My Team Section</h1>
 </div>
 
-<div id="settings" style="display:none;">
-    <h1>Settings Section</h1>
-</div>
-<div id="games" class="page-section">
-<h1>🎮 Games</h1>
-<div class="cards">
-<div class="card"><h3>Valorant</h3></div>
-<div class="card"><h3>BGMI</h3></div>
-<div class="card"><h3>CS2</h3></div>
-</div>
+</section>
+<section class="section">
+
+<h2>Top Players</h2>
+
+<div class="leaderboard">
+
+<div class="leader">
+<span>#1</span>
+<h4>ShadowX</h4>
+<p>9850 Points</p>
 </div>
 
-<div id="tournaments" class="page-section">
-<h1>🏆 Tournaments</h1>
-<div class="tcard">
-<h3>BGMI Pro League</h3>
-<p>Prize Pool ₹1,00,000</p>
-</div>
+<div class="leader">
+<span>#2</span>
+<h4>Vikranth</h4>
+<p>9420 Points</p>
 </div>
 
-<div id="team" class="page-section">
-<h1>👥 My Team</h1>
-<div class="card">
-<h3>Phoenix Squad</h3>
-<p>Captain: Vikranth</p>
-</div>
+<div class="leader">
+<span>#3</span>
+<h4>Nova</h4>
+<p>9100 Points</p>
 </div>
 
-<div id="settings" class="page-section">
-<h1>⚙ Settings</h1>
-<div class="card">
-<p>Profile Settings</p>
-<p>Notification Settings</p>
 </div>
+
+</section>
+<section class="section">
+
+<h2>Daily Missions</h2>
+
+<div class="missions">
+
+<div class="mission">
+Complete 5 Matches
 </div>
+
+<div class="mission">
+Get 20 Eliminations
+</div>
+
+<div class="mission">
+Win 1 Ranked Match
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<h2>Live Tournament</h2>
+
+<div class="live-card">
+
+<span class="live-dot"></span>
+
+<h3>Stackly Championship 2026</h3>
+
+<p>Prize Pool: $250,000</p>
+
+<button>Join Now</button>
+
+</div>
+
+</section>
+
+    </main>
+
+</div>
+
 <script src="player-dashboard.js"></script>
 
 </body>
