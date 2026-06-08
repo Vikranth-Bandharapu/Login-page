@@ -62,3 +62,29 @@ align-items:center;
 margin-bottom:20px;
 
 }
+
+.page-section{
+display:none;
+animation:fadeIn .4s ease;
+}
+
+.page-section.active{
+display:block;
+}
+
+.sidebar a.active{
+background:#3b82f6;
+padding:12px;
+border-radius:12px;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

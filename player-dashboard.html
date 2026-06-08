@@ -16,11 +16,32 @@ src="Assests/logo.webp"
 alt="Stackly Logo">
 
 </div>
-  <a href="404.html"><i class="fas fa-house"></i></a>
-  <a href="404.html"><i class="fas fa-gamepad"></i></a>
-  <a href="404.html"><i class="fas fa-trophy"></i></a>
-  <a href="404.html"><i class="fas fa-users"></i></a>
-  <a href="404.html"><i class="fas fa-gear"></i></a>
+  <div class="sidebar">
+
+<div class="brand">
+<img src="Assests/logo.webp" alt="Stackly Logo">
+</div>
+
+<a href="#" onclick="showSection('home')">
+<i class="fas fa-house"></i>
+</a>
+
+<a href="#" onclick="showSection('games')">
+<i class="fas fa-gamepad"></i>
+</a>
+
+<a href="#" onclick="showSection('tournaments')">
+<i class="fas fa-trophy"></i>
+</a>
+
+<a href="#" onclick="showSection('team')">
+<i class="fas fa-users"></i>
+</a>
+
+<a href="#" onclick="showSection('settings')">
+<i class="fas fa-gear"></i>
+</a>
+
 </div>
 
 <div class="main">
@@ -31,8 +52,8 @@ alt="Stackly Logo">
       <i class="fas fa-bell"></i>
       <div class="profile">
         <div>
-          <h4>ShadowX</h4>
-          <p>shadowx@gmail.com</p>
+          <h4>Vikranth</h4>
+          <p>vikranth@gmail.com</p>
         </div>
         <img src="https://i.pravatar.cc/80" alt="profile">
       </div>
@@ -74,6 +95,55 @@ alt="Stackly Logo">
     <div class="stat"><h2>24</h2><p>Achievements</p></div>
   </section>
 </div>
+
+<div id="games" style="display:none;">
+    <h1>Games Section</h1>
+</div>
+
+<div id="tournaments" style="display:none;">
+    <h1>Tournaments Section</h1>
+</div>
+
+<div id="team" style="display:none;">
+    <h1>My Team Section</h1>
+</div>
+
+<div id="settings" style="display:none;">
+    <h1>Settings Section</h1>
+</div>
+<div id="games" class="page-section">
+<h1>🎮 Games</h1>
+<div class="cards">
+<div class="card"><h3>Valorant</h3></div>
+<div class="card"><h3>BGMI</h3></div>
+<div class="card"><h3>CS2</h3></div>
+</div>
+</div>
+
+<div id="tournaments" class="page-section">
+<h1>🏆 Tournaments</h1>
+<div class="tcard">
+<h3>BGMI Pro League</h3>
+<p>Prize Pool ₹1,00,000</p>
+</div>
+</div>
+
+<div id="team" class="page-section">
+<h1>👥 My Team</h1>
+<div class="card">
+<h3>Phoenix Squad</h3>
+<p>Captain: Vikranth</p>
+</div>
+</div>
+
+<div id="settings" class="page-section">
+<h1>⚙ Settings</h1>
+<div class="card">
+<p>Profile Settings</p>
+<p>Notification Settings</p>
+</div>
+</div>
 <script src="player-dashboard.js"></script>
+
 </body>
 </html>
