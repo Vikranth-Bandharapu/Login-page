@@ -261,3 +261,44 @@ liveDot.style.opacity="1";
 },1000);
 
 }
+document.addEventListener("DOMContentLoaded", () => {
+
+    const name =
+    localStorage.getItem("playerName");
+
+    const email =
+    localStorage.getItem("playerEmail");
+
+    if(name){
+        document.getElementById("playerName").innerText = name;
+    }
+
+    if(email){
+        document.getElementById("playerEmail").innerText = email;
+    }
+
+});
+window.onload = function(){
+
+document.getElementById("playerName").innerText =
+localStorage.getItem("playerName") || "Guest";
+
+document.getElementById("playerEmail").innerText =
+localStorage.getItem("playerEmail") || "No Email";
+
+}
+
+
+function toggleMenu(){
+    document.querySelector(".sidebar")
+    .classList.toggle("active");
+}
+const menuBtn = document.querySelector(".hamburger");
+const sidebar = document.querySelector(".sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".sidebar").classList.toggle("open");
+});

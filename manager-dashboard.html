@@ -3,365 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Stackly Manager Dashboard</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="manager.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet" href="manager.css">
-
 </head>
 <body>
 
-<!-- TOP NAVBAR -->
+<div class="dashboard">
 
-<header class="navbar">
-<div class="logo">
-    <img src="Assests/logo.webp" alt="Stackly Logo">
-</div>
-<nav>
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-<a href="404.html">Dashboard</a>
+        <div class="logo">
+            <img src="Assests/logo.webp" alt="Logo">
+        </div>
 
-<a href="404.html">Teams</a>
+        <ul>
 
-<a href="404.html">Players</a>
+            <li class="active">
+                <i class="fas fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </li>
 
-<a href="404.html">Tournaments</a>
+            <li>
+                <i class="fas fa-users"></i>
+                <span>Teams</span>
+            </li>
 
-<a href="404.html">Reports</a>
+            <li>
+                <i class="fas fa-user"></i>
+                <span>Players</span>
+            </li>
 
-</nav>
+            <li>
+                <i class="fas fa-trophy"></i>
+                <span>Tournaments</span>
+            </li>
 
-<div class="top-right">
+            <li>
+                <i class="fas fa-chart-line"></i>
+                <span>Reports</span>
+            </li>
 
-<div class="search-box">
+            <li>
+                <i class="fas fa-gear"></i>
+                <span>Settings</span>
+            </li>
 
-<i class="fas fa-search"></i>
+        </ul>
 
-<input
-type="text"
-placeholder="Search Team...">
+    </aside>
 
-</div>
+    <!-- Main Content -->
 
-<div class="icon">
+    <main class="main-content">
 
-<i class="fas fa-envelope"></i>
+        <!-- Topbar -->
 
-<span class="badge">3</span>
+        <div class="topbar">
 
-</div>
+            <div class="search-box">
 
-<div class="icon">
+                <i class="fas fa-search"></i>
 
-<i class="fas fa-bell"></i>
+                <input
+                type="text"
+                placeholder="Search teams...">
 
-<span class="badge">5</span>
+            </div>
 
-</div>
+            <div class="profile">
 
-<div class="profile">
+                <img
+                src="https://i.pravatar.cc/100"
+                alt="profile">
 
-<img
-src="https://i.pravatar.cc/100"
-alt="profile">
+                <div>
+<h4 id="managerName"></h4>
+<p id="managerEmail"></p>
+                </div>
 
-<span>Manager</span>
+            </div>
 
-</div>
+        </div>
 
-</div>
+        <!-- Hero -->
 
-</header>
+        <div class="hero-card">
 
-<!-- MAIN -->
+            <h1>Manager Dashboard</h1>
 
-<div class="container">
+            <p>
+                Manage teams, players and tournaments efficiently.
+            </p>
 
-<!-- LEFT FILTER -->
+            <button>
+                View Reports
+            </button>
 
-<aside class="sidebar">
+        </div>
 
-<div class="filter-header">
+        <!-- Stats -->
 
-<h2>Filter By</h2>
+        <div class="stats">
 
-<button>Clear All</button>
+            <div class="card">
+                <h2>128</h2>
+                <p>Total Teams</p>
+            </div>
 
-</div>
+            <div class="card">
+                <h2>542</h2>
+                <p>Total Players</p>
+            </div>
 
-<!-- TEAM STATUS -->
+            <div class="card">
+                <h2>38</h2>
+                <p>Tournaments</p>
+            </div>
 
-<div class="filter-section">
+            <div class="card">
+                <h2>₹2.4L</h2>
+                <p>Revenue</p>
+            </div>
 
-<h3>Team Status</h3>
+        </div>
+<div class="card-section">
+    <h2>Upcoming Matches</h2>
 
-<label>
-<input type="checkbox" checked>
-Active Teams
-</label>
+    <div class="mini-card">
+        <h4>Phoenix Squad vs Alpha Force</h4>
+        <p>Today • 7:00 PM</p>
+    </div>
 
-<label>
-<input type="checkbox">
-Pending Teams
-</label>
-
-<label>
-<input type="checkbox">
-Rejected Teams
-</label>
-
-</div>
-
-<!-- GAME -->
-
-<div class="filter-section">
-
-<h3>Game</h3>
-
-<label>
-<input type="checkbox" checked>
-BGMI
-</label>
-
-<label>
-<input type="checkbox">
-Free Fire
-</label>
-
-<label>
-<input type="checkbox">
-Valorant
-</label>
-
-<label>
-<input type="checkbox">
-COD Mobile
-</label>
-
-</div>
-
-<!-- TEAM SIZE -->
-
-<div class="filter-section">
-
-<h3>Team Type</h3>
-
-<label>
-<input type="checkbox">
-Solo
-</label>
-
-<label>
-<input type="checkbox">
-Duo
-</label>
-
-<label>
-<input type="checkbox" checked>
-Squad
-</label>
-
+    <div class="mini-card">
+        <h4>Shadow Hunters vs Titans</h4>
+        <p>Tomorrow • 5:00 PM</p>
+    </div>
 </div>
 
-</aside>
+<div class="card-section">
+    <h2>Top Team</h2>
 
-<!-- CONTENT -->
-
-<main class="content">
-<div class="stats-row">
-
-<div class="stat-box">
-<h2>128</h2>
-<p>Total Teams</p>
+    <div class="mini-card">
+        <h3>🏆 Phoenix Squad</h3>
+        <p>12 Tournament Wins</p>
+        <p>92% Win Rate</p>
+    </div>
 </div>
 
-<div class="stat-box">
-<h2>542</h2>
-<p>Total Players</p>
+<div class="card-section">
+    <h2>Notifications</h2>
+
+    <div class="notification">
+        🔥 New team registered
+    </div>
+
+    <div class="notification">
+        🏆 Tournament starts tomorrow
+    </div>
+
+    <div class="notification">
+        📢 New announcement posted
+    </div>
 </div>
 
-<div class="stat-box">
-<h2>38</h2>
-<p>Active Tournaments</p>
-</div>
 
-<div class="stat-box">
-<h2>91%</h2>
-<p>Success Rate</p>
-</div>
+<div class="analytics-section">
 
-</div>
-<div class="content-header">
+    <div class="graph-card">
+        <h3>Team Growth</h3>
 
-<h1>Team Management</h1>
+        <div class="graph">
+            <div class="bar" style="height:80px;"></div>
+            <div class="bar" style="height:120px;"></div>
+            <div class="bar" style="height:100px;"></div>
+            <div class="bar" style="height:150px;"></div>
+            <div class="bar" style="height:130px;"></div>
+            <div class="bar" style="height:90px;"></div>
+        </div>
+    </div>
 
-<button class="add-team">
-+ Add Team
-</button>
+    <div class="graph-card">
+        <h3>Tournament Performance</h3>
 
-</div>
+        <div class="circle-chart">
+            <div class="circle">
+                <span>78%</span>
+            </div>
 
-<!-- TEAM CARDS GRID -->
-
-<div class="cards-grid">
-
-<!-- CARD 1 -->
-
-<div class="team-card">
-
-<div class="card-image">
-
-<img src="Assests/pexels-lulizler-3165335.webp">
-
-<i class="fas fa-heart"></i>
+            <p>Success Rate</p>
+        </div>
+    </div>
 
 </div>
+        <!-- Table -->
 
-<div class="card-content">
+        <div class="table-box">
 
-<h2>Phoenix Squad</h2>
+            <h2>Recent Teams</h2>
 
-<p>BGMI Professional Team</p>
+            <table>
 
-<div class="card-stats">
+                <thead>
 
-<span>
-<i class="fas fa-users"></i>
-4 Players
-</span>
+                <tr>
+                    <th>Team</th>
+                    <th>Game</th>
+                    <th>Status</th>
+                </tr>
 
-<span>
-<i class="fas fa-trophy"></i>
-12 Wins
-</span>
+                </thead>
 
-</div>
+                <tbody>
 
-<h3>Diamond Rank</h3>
+                <tr>
+                    <td>Phoenix Squad</td>
+                    <td>BGMI</td>
+                    <td>Active</td>
+                </tr>
 
-</div>
+                <tr>
+                    <td>Alpha Force</td>
+                    <td>Valorant</td>
+                    <td>Active</td>
+                </tr>
 
-</div>
+                <tr>
+                    <td>Shadow Hunters</td>
+                    <td>Free Fire</td>
+                    <td>Pending</td>
+                </tr>
 
-<!-- CARD 2 -->
+                </tbody>
 
-<div class="team-card">
+            </table>
 
-<div class="card-image">
+        </div>
 
-<img src="Assests/pexels-yankrukov-9072381.webp">
-
-<i class="fas fa-heart"></i>
-
-</div>
-
-<div class="card-content">
-
-<h2>Shadow Hunters</h2>
-
-<p>Valorant Team</p>
-
-<div class="card-stats">
-
-<span>
-<i class="fas fa-users"></i>
-5 Players
-</span>
-
-<span>
-<i class="fas fa-trophy"></i>
-18 Wins
-</span>
+    </main>
 
 </div>
+<script>
+document.getElementById("managerName").innerText =
+localStorage.getItem("userName");
 
-<h3>Platinum Rank</h3>
+document.getElementById("managerEmail").innerText =
+localStorage.getItem("userEmail");
+</script>
+<script>
+document.getElementById("managerName").innerText =
+localStorage.getItem("playerName") || "Manager";
 
-</div>
-
-</div>
-
-<!-- CARD 3 -->
-
-<div class="team-card">
-
-<div class="card-image">
-
-<img src="Assests/virtual reality.webp">
-
-<i class="fas fa-heart"></i>
-
-</div>
-
-<div class="card-content">
-
-<h2>Alpha Force</h2>
-
-<p>Free Fire Team</p>
-
-<div class="card-stats">
-
-<span>
-<i class="fas fa-users"></i>
-4 Players
-</span>
-
-<span>
-<i class="fas fa-trophy"></i>
-15 Wins
-</span>
-
-</div>
-
-<h3>Ace Rank</h3>
-
-</div>
-
-</div>
-
-</div>
-
-</main>
-
-<!-- RIGHT PANEL -->
-
-<aside class="activity-panel">
-
-<h2>Live Activity</h2>
-
-<div class="activity">
-
-<p>🔥 Phoenix Squad joined tournament</p>
-
-</div>
-
-<div class="activity">
-
-<p>🏆 Shadow Hunters won match</p>
-
-</div>
-
-<div class="activity">
-
-<p>📩 New Team Registration</p>
-
-</div>
-
-<div class="activity">
-
-<p>⚔ Upcoming Match Today</p>
-
-</div>
-
-</aside>
-
-</div>
-
-<script src="manager.js"></script>
-
+document.getElementById("managerEmail").innerText =
+localStorage.getItem("playerEmail") || "manager@gmail.com";
+</script>
 </body>
 </html>

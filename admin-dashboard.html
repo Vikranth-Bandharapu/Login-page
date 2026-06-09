@@ -120,14 +120,14 @@ placeholder="Search users...">
 <span class="badge">8</span>
 
 </div>
-
 <div class="profile">
 
-<img src="https://i.pravatar.cc/150?img=3">
+    <img src="https://i.pravatar.cc/150?img=3">
 
-<span>Admin</span>
-
-</div>
+    <div>
+        <h4 id="adminName"></h4>
+        <p id="adminEmail"></p>
+    </div>
 
 </div>
 
@@ -370,6 +370,12 @@ View
 </div>
 
 <script src="admin.js"></script>
+<script>
+document.getElementById("adminName").innerText =
+localStorage.getItem("playerName") || "Admin";
 
+document.getElementById("adminEmail").innerText =
+localStorage.getItem("playerEmail") || "admin@gmail.com";
+</script>
 </body>
 </html>

@@ -414,3 +414,27 @@ overflow-x:auto;
 }
 
 }
+
+
+
+
+body{
+background:#0f172a;
+}
+
+.card,
+.stat-card,
+.team-card{
+background:#111827;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.sidebar{
+background:#111827;
+}
+
+.navbar,
+.topbar{
+background:#111827;
+}

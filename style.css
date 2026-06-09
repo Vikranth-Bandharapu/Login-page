@@ -44,41 +44,6 @@ backdrop-filter:blur(20px);
 animation:float 8s ease-in-out infinite;
 }
 
-.shape1{
-
-width:250px;
-height:250px;
-
-top:10%;
-left:10%;
-}
-
-.shape2{
-
-width:180px;
-height:180px;
-
-bottom:15%;
-left:20%;
-}
-
-.shape3{
-
-width:220px;
-height:220px;
-
-top:20%;
-right:10%;
-}
-
-.shape4{
-
-width:300px;
-height:300px;
-
-bottom:-100px;
-right:-50px;
-}
 
 .login-card{
 
@@ -86,9 +51,9 @@ position:relative;
 
 z-index:10;
 
-width:420px;
+width:500px;
 
-padding:40px;
+padding:50px;
 
 border-radius:30px;
 
@@ -589,4 +554,46 @@ background:#0f172a;
     width:180px;      /* increase or decrease as needed */
     height:auto;
     object-fit:contain;
+}
+
+@media(min-width:1024px){
+
+.login-card{
+width:550px;
+max-width:90%;
+}
+
+.logo img{
+width:220px;
+}
+}
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:40px;
+}
+
+.container{
+display:flex;
+width:100%;
+max-width:1200px;
+background:rgba(255,255,255,.08);
+border-radius:30px;
+overflow:hidden;
+backdrop-filter:blur(20px);
+}
+
+.left-panel{
+flex:1;
+padding:60px;
+color:white;
+}
+
+.login-card{
+flex:1;
+max-width:none;
+width:auto;
+margin:0;
 }
